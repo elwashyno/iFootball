@@ -1,7 +1,7 @@
 
 # iFootball ⚽
 
-**iFootball** est une application dédiée à la gestion et à l'analyse des données liées au football. Ce projet vise à fournir une interface simple et efficace pour gérer les classements, organiser les matchs et accéder à des informations enrichies grâce à des API.
+**iFootball** est une application dédiée à la gestion et à l'analyse des données liées au football sur la plateforme Discord (peut être réadapter en web). Ce projet vise à fournir une interface simple et efficace pour gérer les classements, organiser les matchs et accéder à des informations enrichies grâce à une API (https://www.football-data.org/).
 
 ---
 
@@ -18,7 +18,7 @@
 
 ### Prérequis
 - **Node.js** (v14 ou supérieur)
-- **npm** (ou **yarn** si vous préférez)
+- **npm** 
 
 ### Étapes
 1. **Clonez le projet** :
@@ -31,6 +31,15 @@
    ```bash
    npm install
    ```
+    ```bash
+   npm install discord.js
+   ```
+     ```bash
+   npm install dayjs
+   ```
+      ```bash
+   npm install dotenv
+   ```
 
 3. **Configurez votre fichier `.env`** :
    - Créez un fichier `.env` à la racine du projet.
@@ -38,8 +47,8 @@
 
 4. **Démarrez l'application** :
    ```bash
-   npm start
-   ```
+   npm run start
+   ``` (si il existe un script dans le json)
    ou
    ```bash
    node index.js
@@ -54,7 +63,7 @@ Créez un fichier `.env` à la racine du projet et ajoutez les variables suivant
 ```
 API_KEY=VOTRE_CLE_API
 DATABASE_URL=URL_DE_VOTRE_BASE_DE_DONNEES
-PORT=3000
+ID_DISCORD = VOTRE_ID_DISCORD
 ```
 
 Adaptez ces variables en fonction de vos besoins et de votre environnement.
@@ -91,4 +100,4 @@ Les contributions sont les bienvenues !
 
 ## 📞 Support
 
-Pour toute question ou aide supplémentaire, contactez-moi via GitHub : [@elwashyno](https://github.com/elwashyno).
+Pour toute question ou aide supplémentaire, contactez-moi via GitHub : [@elwashyno](https://github.com/elwashyno) ou par mail dhahriimad38@gmail.com.
